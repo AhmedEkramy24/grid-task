@@ -1,0 +1,493 @@
+/* start global valeus */
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --openSans: "Open Sans", sans-serif;
+  --arvo: "Arvo", serif;
+  --montserrat: "Montserrat", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sp {
+  font-size: 12px;
+  color: rgb(159, 163, 167);
+  font-weight: 700;
+  line-height: 20px;
+  font-family: var(--montserrat);
+  letter-spacing: 2px;
+}
+
+/* end global valeus */
+
+.container {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "iphone iphone download download"
+    "iphone iphone download download"
+    "keyboard imac imac icloud"
+    "keyboard imac imac icloud"
+    "games best best icloud"
+    "games best best icloud"
+    "twitter much tele tele";
+}
+
+.iphone {
+  grid-area: iphone;
+}
+
+.download {
+  grid-area: download;
+}
+
+.keyboard {
+  grid-area: keyboard;
+}
+
+.imac {
+  grid-area: imac;
+}
+
+.icloud {
+  grid-area: icloud;
+}
+
+.games {
+  grid-area: games;
+}
+
+.best {
+  grid-area: best;
+}
+
+.twitter {
+  grid-area: twitter;
+}
+
+.much {
+  grid-area: much;
+}
+
+.tele {
+  grid-area: tele;
+}
+
+/* start iphone */
+.iphone {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 30px;
+  align-items: center;
+}
+
+.iphone .con {
+  width: 32%;
+}
+
+.iphone .con p:first-of-type {
+  font-size: 22px;
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+  line-height: 32px;
+  font-family: var(--arvo);
+}
+
+.iphone .con p:last-of-type {
+  font-size: 14px;
+  color: rgb(159, 163, 167);
+  font-weight: 400;
+  line-height: 26px;
+  font-family: var(--openSans);
+}
+
+.iphone img {
+  width: 250px;
+  align-self: flex-end;
+  margin-top: 40px;
+}
+
+/* end iphone */
+/* start download */
+.download {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f8f9;
+  padding: 50px 20px;
+}
+
+.download p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 48px;
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+  line-height: 60px;
+  font-family: var(--arvo);
+  max-width: 550px;
+}
+
+.download a {
+  color: rgb(39, 185, 194);
+  font-size: 14px;
+  font-family: var(--openSans);
+  font-weight: 400;
+}
+/* end download */
+/* start keyboard */
+.keyboard {
+  background-color: #f05638;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.keyboard img {
+  width: 320px;
+}
+
+.keyboard h2 {
+  font-family: var(--arvo);
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  max-width: 200px;
+}
+
+.keyboard a {
+  text-align: center;
+  font-family: var(--openSans);
+  font-weight: 700;
+  font-size: 12px;
+  color: rgb(255, 200, 10);
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+/* end keyboard */
+/* start imac */
+.imac {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 10px;
+}
+
+.imac .m1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.imac .m1 .txt p {
+  font-size: 22px;
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+  font-family: var(--arvo);
+  max-width: 550px;
+}
+
+.imac .m1 img {
+  width: 450px;
+  right: 190px;
+  position: relative;
+  left: -270px;
+  top: 40px;
+}
+
+.imac .m2 {
+  width: 40%;
+}
+
+.imac .m2 p {
+  font-size: 14px;
+  color: rgb(159, 163, 167);
+  font-weight: 400;
+  line-height: 26px;
+  font-family: var(--openSans);
+}
+
+.imac .m2 a {
+  font-family: var(--openSans);
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: rgb(39, 185, 194);
+  font-weight: 700;
+}
+/* end imac */
+/* start icloud */
+.icloud {
+  background-color: #8f76bc;
+  padding: 50px 0;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  /* justify-content: space-around; */
+}
+
+.icloud .p1 {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #8166b0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 375px;
+  height: 375px;
+}
+
+.icloud .p1 img {
+  width: 240px;
+  margin-top: 20px;
+}
+
+.icloud .p1 p:first-of-type {
+  font-weight: 700;
+  font-size: 10px;
+  width: fit-content;
+  padding: 5px 8px;
+  color: white;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-family: var(--openSans);
+  background-color: #8b72b6;
+  letter-spacing: 2px;
+  margin-top: 30px;
+}
+
+.icloud .p1 p:first-of-type i {
+  color: #f5c118;
+}
+
+.icloud .p1 p:last-of-type {
+  font-size: 12px;
+  font-family: var(--montserrat);
+  font-weight: 700;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.icloud .p2 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icloud .p2 h3 {
+  font-family: var(--arvo);
+  font-weight: 700;
+  line-height: 36px;
+  font-size: 32px;
+}
+
+.icloud .p2 p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: var(--openSans);
+}
+
+.icloud .p2 a {
+  display: block;
+  width: fit-content;
+  color: black;
+  background-color: #f5c118;
+  letter-spacing: 3px;
+  padding: 25px;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  margin-top: 30px;
+  font-family: var(--openSans);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* end icloud */
+/* start games */
+.games {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.games img {
+  width: 250px;
+  max-width: none;
+}
+
+.games h3 {
+  font-family: var(--arvo);
+  font-weight: 400;
+  font-size: 22px;
+  color: rgb(51, 51, 51);
+}
+
+.games a {
+  font-weight: 700;
+  color: rgb(39, 185, 194);
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-family: var(--openSans);
+}
+/* end games */
+/* strat best */
+.best {
+  display: flex;
+  flex-direction: column;
+  background-color: #93b6b7;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.best p {
+  color: white;
+  background-color: #f05638;
+  width: fit-content;
+  padding: 5px 10px;
+  font-family: var(--openSans);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.best h3 {
+  text-align: center;
+  color: white;
+  font-family: var(--arvo);
+  line-height: 32px;
+  font-size: 22px;
+  font-weight: 700;
+  position: relative;
+}
+.best img {
+  width: 100%;
+  transform: translateX(-10%);
+  z-index: 999;
+  -webkit-transform: translateX(-10%);
+  -moz-transform: translateX(-10%);
+  -ms-transform: translateX(-10%);
+  -o-transform: translateX(-10%);
+}
+/* end best */
+/* start twitter */
+.twitter{
+  background-color: #38d5f4;
+  padding: 20px;
+}
+
+.twitter .con{
+  width: 250px;
+  height: 250px;
+  background-color: #35cfed;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.twitter .con i{
+  font-size: 50px;
+  color: #f5c118;
+}
+
+.twitter .con h3{
+  color: white;
+  font-family: var(--arvo);
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+}
+/* end twitter */
+/* start much */
+.much{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.much p{
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 5px 8px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-family: var(--openSans);
+  background-color: #7bc424;
+}
+
+.much h3{
+  font-family: var(--arvo);
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+/* end much */
+/* start tele */
+.tele{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-around;
+  background-color: #2c2c2c;
+}
+
+.tele img{
+  width:250px;
+}
+
+.tele h3{
+  color: white;
+  font-family: var(--arvo);
+  font-size: 22px;
+  font-weight: 400;
+}
+/* end tele */

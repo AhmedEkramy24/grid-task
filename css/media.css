@@ -1,0 +1,94 @@
+@media (max-width: 1120px) {
+  .container {
+    grid-template-areas:
+      "download download"
+      "download download"
+      "iphone iphone"
+      "iphone iphone"
+      "iphone iphone"
+      "keyboard games"
+      "keyboard games"
+      "keyboard games"
+      "imac imac"
+      "imac imac"
+      "imac imac"
+      "twitter icloud"
+      "twitter icloud"
+      "best icloud"
+      "best icloud"
+      "best icloud"
+      "much much"
+      "tele tele"
+      "tele tele";
+  }
+}
+
+@media (max-width: 460px) {
+  .container {
+    grid-template-areas:
+      "download"
+      "download"
+      "download"
+      "iphone"
+      "iphone"
+      "iphone"
+      "iphone"
+      "keyboard"
+      "keyboard"
+      "games"
+      "games"
+      "games"
+      "imac"
+      "imac"
+      "imac"
+      "imac"
+      "imac"
+      "twitter"
+      "twitter"
+      "best"
+      "best"
+      "best"
+      "icloud"
+      "icloud"
+      "icloud"
+      "icloud"
+      "icloud"
+      "much"
+      "tele"
+      "tele";
+  }
+
+  .container .iphone {
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+  }
+
+  .container .iphone div {
+    width: 100%;
+  }
+
+  .container .iphone img{
+    align-self: flex-start;
+  }
+
+  .container .imac{
+    flex-direction: column;
+  }
+
+  .container .imac> *{
+    width: 100%;
+  }
+
+  .container .imac .m1 img{
+    left: -100px;
+  }
+
+  .container .imac .m2{
+    margin-top: 100px;
+  }
+
+  .tele{
+    flex-direction: column-reverse;
+  }
+}
